@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-ManytomanyApplication<manytomany>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.manytomany.manytomany.ManytomanyApplication",
+            "projectName": "manytomany",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
