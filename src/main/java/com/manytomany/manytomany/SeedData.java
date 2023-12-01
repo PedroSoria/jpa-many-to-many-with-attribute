@@ -42,6 +42,11 @@ public class SeedData implements ApplicationRunner {
         sale.setVeicle(veicle1);
         sale.setNumber(3);
 
+        ArrayList<Sale> sales = new ArrayList<>();
+        sales.add(sale);
+
+        customer1.setSales(sales);
+
         customerRepository.save(customer1);
         veicelRepository.save(veicle1);
         saleRepository.save(sale);
