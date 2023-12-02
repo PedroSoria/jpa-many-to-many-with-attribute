@@ -50,6 +50,5 @@ public class SeedData implements ApplicationRunner {
         customerRepository.save(customer1);
         veicelRepository.save(veicle1);
         saleRepository.save(sale);
-
     }
 }

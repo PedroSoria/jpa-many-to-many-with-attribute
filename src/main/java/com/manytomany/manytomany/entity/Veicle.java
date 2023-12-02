@@ -13,7 +13,7 @@ import lombok.*;
 public class Veicle implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long veicleId;
     String name;
     @OneToMany(mappedBy = "veicle", cascade = CascadeType.ALL)
     private Collection<Sale> sales = new ArrayList<>();

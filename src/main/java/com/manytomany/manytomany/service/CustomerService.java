@@ -1,10 +1,10 @@
 package com.manytomany.manytomany.service;
 
-import org.springframework.beans.factory.annotation.Autowired;
+// import org.springframework.beans.factory.annotation.Autowired;
 
-import com.manytomany.manytomany.entity.Customer;
-import com.manytomany.manytomany.repository.ICustomerRepository;
-import com.manytomany.manytomany.repository.IVeicelRepository;
+// import com.manytomany.manytomany.entity.Customer;
+// import com.manytomany.manytomany.repository.ICustomerRepository;
+// import com.manytomany.manytomany.repository.IVeicelRepository;
 
 public class CustomerService {
 
