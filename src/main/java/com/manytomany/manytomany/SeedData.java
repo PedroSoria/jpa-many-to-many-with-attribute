@@ -18,14 +18,15 @@ import com.manytomany.manytomany.repository.IVeicelRepository;
 import jakarta.transaction.Transactional;
 
 @Component
+// @RequiredArgsConstructor
 public class SeedData implements ApplicationRunner {
 
     @Autowired
-    private ICustomerRepository customerRepository;
+    ICustomerRepository customerRepository;
     @Autowired
-    private IVeicelRepository veicelRepository;
+    IVeicelRepository veicelRepository;
     @Autowired
-    private ISaleRepository saleRepository;
+    ISaleRepository saleRepository;
 
     @Override
     @Transactional

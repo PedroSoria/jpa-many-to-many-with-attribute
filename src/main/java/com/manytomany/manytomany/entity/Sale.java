@@ -9,18 +9,18 @@ import java.io.Serializable;
 @Table(name = "sale")
 public class Sale implements Serializable {
     @EmbeddedId
-    private SalesId salesId = new SalesId();
+    SalesId salesId = new SalesId();
 
     @ManyToOne
     @MapsId("customerId")
     @JoinColumn(name = "customer_id")
-    private Customer customer;
+    Customer customer;
 
     @ManyToOne
     @MapsId("veicleId")
     @JoinColumn(name = "veicle_id")
-    private Veicle veicle;
+    Veicle veicle;
 
-    private int number;
+    int number;
 
 }

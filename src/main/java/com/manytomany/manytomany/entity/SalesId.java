@@ -10,6 +10,6 @@ import java.io.Serializable;
 @EqualsAndHashCode
 @Data
 public class SalesId implements Serializable {
-    private Long veicleId;
-    private Long customerId;
+    Long veicleId;
+    Long customerId;
 }
