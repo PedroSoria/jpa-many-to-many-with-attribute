@@ -16,5 +16,5 @@ public class Customer implements Serializable {
     Long customerId;
     String name;
     @OneToMany(mappedBy = "customer", cascade = CascadeType.ALL)
-    Collection<Sale> sales = new ArrayList<>();
+    Collection<Sale> sales;
 }
