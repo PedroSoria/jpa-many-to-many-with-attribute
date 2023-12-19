@@ -18,7 +18,6 @@ import com.manytomany.manytomany.repository.IVeicelRepository;
 import jakarta.transaction.Transactional;
 
 @Component
-// @RequiredArgsConstructor
 public class SeedData implements ApplicationRunner {
 
     @Autowired

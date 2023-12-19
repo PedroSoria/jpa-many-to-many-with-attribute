@@ -1,10 +1,10 @@
 package com.manytomany.manytomany.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
+import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 import com.manytomany.manytomany.entity.Customer;
 
-@Repository
+@RepositoryRestResource
 public interface ICustomerRepository extends JpaRepository<Customer, Long> {
 
 }
