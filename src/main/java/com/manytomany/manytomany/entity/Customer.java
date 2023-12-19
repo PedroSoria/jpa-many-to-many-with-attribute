@@ -13,6 +13,7 @@ public class Customer implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long customerId;
+    @Column(nullable = false)
     String name;
     @OneToMany(mappedBy = "customer", cascade = CascadeType.ALL)
     Collection<Sale> sales;

@@ -13,6 +13,7 @@ public class Veicle implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long veicleId;
+    @Column(nullable = false)
     String name;
     @OneToMany(mappedBy = "veicle", cascade = CascadeType.ALL)
     Collection<Sale> sales;

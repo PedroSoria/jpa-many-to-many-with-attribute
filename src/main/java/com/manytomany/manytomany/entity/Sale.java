@@ -21,6 +21,7 @@ public class Sale implements Serializable {
     @JoinColumn(name = "veicle_id")
     Veicle veicle;
 
+    @Column(nullable = false)
     int number;
 
 }
